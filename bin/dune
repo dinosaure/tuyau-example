@@ -1,0 +1,9 @@
+(library
+ (name gimme)
+ (modules gimme)
+ (libraries paf))
+
+(executable
+ (name example)
+ (modules example)
+ (libraries fmt.tty logs.fmt mirage-crypto-rng.unix mirage-time-unix tcpip.stack-socket gimme))
